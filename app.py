@@ -64,6 +64,19 @@ def predict():
     else:
         return render_template('prediction.html', prediction="Something went wrong")
 
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+# 👇 Naya Email Route Add Karo
+@app.route('/email', methods=['GET'])
+def email_form():
+    return render_template('Email.html')
+
+@app.route('/submit_email', methods=['POST'])
+def submit_email():
+    email = request.form['email']
+    return f"Received email: {email}"
 
 
 if __name__ == '__main__':
