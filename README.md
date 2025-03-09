@@ -76,7 +76,7 @@ Before you begin, ensure you have met the following requirements:
 To get started with this project, follow these steps:
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/mukulsharma421/Fake-News-Detection-using-MachineLearning.git
+   (https://github.com/mukulsharma421/fake_news_detector.git)
    ```
 
 2. Create a virtual environment (optional but recommended):
