@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icons8-facebook-ios-16-filled-32.png') }}">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+        <!-- Replace SVG with an image from the static folder -->
+        <img src="{{ url_for('static', filename='icon.png') }}" alt="Logo" class="logo-img">
+        Fake News Detection
+    </div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/predict">Prediction</a>
+        <a href="#">About</a>
+        <a href="#">Contact us</a>
+    </nav>
+</header>
+
+<section class="container">
+    <div class="text-content">
+        <h1>Fake News Detection<br>using Machine Learning</h1>
+        <p>A reliable source for verifying news authenticity. Validate the accuracy of the news and uncover the truth.</p>
+        <a href="/predict" class="btn">Get Started</a>
+    </div>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='hero_img.svg') }}" alt="Fake News Detection">
+    </div>
+</section>
+
+</body>
+</html>
+
